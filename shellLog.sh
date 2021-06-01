@@ -42,7 +42,7 @@ ERROR_COLOR="${PREFIX}196m"
 DEBUG ()
 {
     if [[ "$_DEBUG" == 'on' ]]; then
-        echo -e "${DEBUG_COLOR}[DEBUG] $gScriptName: $@${DEFAULT_COLOR}"
+        echo -e "${DEBUG_COLOR}[DEBUG] $gScriptName: $@${DEFAULT_COLOR}" 1>&2
     fi
 }	# ----------  end of function DEBUG  ----------
 
@@ -50,7 +50,7 @@ DEBUG ()
 INFO ()
 {
     if [[ "$_INFO" == 'on' ]]; then
-        echo -e "${INFO_COLOR}[INFO] $gScriptName: $@${DEFAULT_COLOR}"
+        echo -e "${INFO_COLOR}[INFO] $gScriptName: $@${DEFAULT_COLOR}" 1>&2
     fi
 }	# ----------  end of function INFO  ----------
 
@@ -58,7 +58,7 @@ INFO ()
 WARN ()
 {
     if [[ "$_WARN" == 'on' ]]; then
-        echo -e "${WARN_COLOR}[WARN] $gScriptName: $@${DEFAULT_COLOR}"
+        echo -e "${WARN_COLOR}[WARN] $gScriptName: $@${DEFAULT_COLOR}" 1>&2
     fi
 }	# ----------  end of function WARN  ----------
 
@@ -66,7 +66,7 @@ WARN ()
 ERROR ()
 {
     if [[ "$_ERROR" == 'on' ]]; then
-        echo -e "${ERROR_COLOR}[ERROR] $gScriptName: $@${DEFAULT_COLOR}"
+        echo -e "${ERROR_COLOR}[ERROR] $gScriptName: $@${DEFAULT_COLOR}" 1>&2
     fi
 }	# ----------  end of function ERROR  ----------
 
