@@ -10,14 +10,14 @@
 #                dump trace
 #                   cat /sys/kernel/debug/tracing/trace > output_$(date +"%Y%m%d_%H_%M_%S")
 #
-#   DESCRIPTION: 
+#   DESCRIPTION:
 #
 #       OPTIONS: ---
 #  REQUIREMENTS: ---
 #          BUGS: ---
 #         NOTES: ---
-#        AUTHOR: YOUR NAME (), 
-#  ORGANIZATION: 
+#        AUTHOR:
+#  ORGANIZATION:
 #       CREATED: 04/ 7/2021  2:44:14 PM
 #      REVISION:  ---
 #===============================================================================
