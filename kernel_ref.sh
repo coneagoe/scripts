@@ -11,8 +11,8 @@
 #  REQUIREMENTS: ---
 #          BUGS: ---
 #         NOTES: ---
-#        AUTHOR: 
-#  ORGANIZATION: 
+#        AUTHOR:
+#  ORGANIZATION:
 #       CREATED: 05/13/2020 09:55:41 AM
 #      REVISION:  ---
 #===============================================================================
@@ -24,12 +24,17 @@ source $HOME/scripts/shellLog.sh > /dev/null
 
 usage ()
 {
-	echo "Usage: $gScriptName <arch> [subarch]"
+  echo "Usage: $gScriptName <arch> [subarch]"
   echo "arch: see arch/"
   echo "subarch: see arch/xxx/ if needed"
 }	# ----------  end of function usage  ----------
 
 if [ $# -ne 1 ] && [ $# -ne 2 ]; then
+  usage
+  exit 0
+fi
+
+if [ $1 == "-h" ] || [ $1 == "--help" ]; then
   usage
   exit 0
 fi
